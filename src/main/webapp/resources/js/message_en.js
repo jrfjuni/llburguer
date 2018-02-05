@@ -1,0 +1,3 @@
+var MESSAGE = {
+	person: "Person"
+};
