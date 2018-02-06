@@ -71,7 +71,7 @@
     <div class="jumbotron">
       <div class="container">
       
-      	<form id="loginForm" class='form-horizontal' action="/burguer/" method="post">
+      	<form id="loginForm" class='form-horizontal' action="/" method="post">
       			
       			<div class='row col col-md-12'>
       			
