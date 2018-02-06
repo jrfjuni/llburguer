@@ -1,4 +1,4 @@
-<%@ tag language="java" pageEncoding="ISO-8859-1"%>
+<%@ tag language="java" pageEncoding="utf-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
@@ -83,7 +83,7 @@
 
       <footer>
       <p><c:out value = "${locale}"/></p>
-        <p>© Company 2017</p>
+        <p>Â© Company 2017</p>
       </footer>
     </div> <!-- /container -->
    

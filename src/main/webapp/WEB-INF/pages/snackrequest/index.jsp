@@ -112,7 +112,7 @@
 			           </div>
 					  <!-- /. FILLING -->  
 		  
-					  <!-- SALAD -->
+					  <!-- SALAD 
 					   <div class="form-group row">
 					      
 					      <label class="col-sm-2">
@@ -139,9 +139,9 @@
 							</div>
 					      </div>
 					    </div>
-					  <!-- /. SALAD -->
+					   /. SALAD -->
 		  
-					    <!-- SAUCES -->
+					    <!-- SAUCES
 					    <div class="form-group row">
 					      
 					      <label class="col-sm-2">
@@ -161,10 +161,10 @@
 					        </div>
 					      </div>
 					    </div>
-					  <!-- /. SAUCES -->
+					   /. SAUCES -->
 					  
 					  
-					  <!-- SPICE -->
+					  <!-- SPICE
 					  <div class="form-group row">
 					      
 					      <label class="col-sm-2">
@@ -187,7 +187,7 @@
 					        </div>
 					      </div>
 					    </div>
-					    <!-- /. SPICE -->
+					     /. SPICE -->
 					    
 					     <div class="form-group row text-center">
 						   	<div class="col-sm-2"></div>

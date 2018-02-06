@@ -15,7 +15,7 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Required {
 	
-	String message() default "{message.err.field.required}";
+	String message() default "{javax.validation.constraints.NotNull.message}";
 	
 	Class<?>[] groups() default {};
     
