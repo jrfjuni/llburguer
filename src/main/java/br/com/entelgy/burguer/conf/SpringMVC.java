@@ -13,7 +13,7 @@ public class SpringMVC extends AbstractAnnotationConfigDispatcherServletInitiali
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] {SecurityConfiguration.class, AppWebConfiguration.class, 
-								JPAConfiguration.class, JPAProductionConfiguration.class};
+								JPAConfiguration.class};
 	}
 
 	@Override
@@ -32,5 +32,5 @@ public class SpringMVC extends AbstractAnnotationConfigDispatcherServletInitiali
 //		servletContext.addListener(RequestContextListener.class);
 //		servletContext.setInitParameter("spring.profiles.active", "dev");
 //	}
-	
+//	
 }
