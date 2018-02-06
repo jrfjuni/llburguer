@@ -40,28 +40,28 @@
 		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		      	<div class="mr-auto"></div>
 		      	
-		      	<!-- LANGUAGE -->
+		      	<!-- LANGUAGE 
 		      	<ul class="navbar-nav navbar-right">
 		        	<li class="nav-item dropdown">
 		          		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				   			<fmt:message key="label.language"/>
 				  		</button>
 				  
-				  		<div class="dropdown-menu dropdown-menu-right">
+				  		<div class="dropdown-menu dropdown-menu-right"> -->
 				  	
-				  			<!-- PORTUGUESE -->
+				  			<!-- PORTUGUESE
 						  	<a href="#" onclick="fnSetLang('pt');" rel="nofollow" class='dropdown-item'>
 								<fmt:message key="label.language.pt"/>
-							</a>
+							</a>  -->
 					
-							<!-- ENGLISH -->
+							<!-- ENGLISH 
 							<a href="#" onclick="fnSetLang('en');" rel="nofollow" class='dropdown-item'>
 								<fmt:message key="label.language.en"/>
 							</a>
 				  		</div>
 		          	</li>
 		      	</ul>
-		      	<!-- /. LANGUAGE -->
+		      	/. LANGUAGE -->
 		         
 		      </div>
 	    </nav>
