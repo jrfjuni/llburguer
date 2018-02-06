@@ -6,11 +6,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-	
 		<meta charset="utf-8" />
     	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    	<title>Casa do Código</title>
+    	<title><fmt:message key="llabel.title.login"/></title>
     	
     	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css" >
     	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/fonts/css/fontawesome-all.min.css" >
@@ -19,13 +18,9 @@
     	<script  src="${pageContext.request.contextPath}/resources/js/bootstrap/bootstrap.min.js"></script>
     	<script  src="${pageContext.request.contextPath}/resources/js/util.js"></script>
     	<script  src="${pageContext.request.contextPath}/resources/js/message_${pageContext.response.locale}.js"></script>
-    	
-    	
 	</head>
 
 	<body>
-	
-	
 
 		<!-- HEADER -->
 	    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
@@ -34,7 +29,7 @@
 	        	<span class="navbar-toggler-icon"></span>
 	      	</button>
 	      
-	      	<a class="navbar-brand" href="#">Navbar</a>
+	      	<a class="navbar-brand" href="#"><fmt:message key="llabel.title"/></a>
 	
 		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		      	<div class="mr-auto"></div>
