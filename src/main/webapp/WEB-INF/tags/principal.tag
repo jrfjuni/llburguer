@@ -9,7 +9,7 @@
 		<meta charset="utf-8" />
     	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    	<title><fmt:message key="llabel.title.login"/></title>
+    	<title><fmt:message key="label.title.login"/></title>
     	
     	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css" >
     	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/fonts/css/fontawesome-all.min.css" >
