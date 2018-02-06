@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+	$(document).on('click', '.burguer-btn-logout', function(){
+		window.location.href = contextPath + "/logout";
+	});
 	
 	fnScrollTop = function(){
 		 $('html, body').animate({

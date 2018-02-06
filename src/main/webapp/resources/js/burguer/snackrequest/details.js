@@ -85,6 +85,4 @@ function _createPercentPerson(){
 		$('.burguer-table-person-percent').show();
 		$('.burguer-tbody-person-percent').html(tr);
 	}
-	
-	
 };
