@@ -18,6 +18,10 @@
     	<script  src="${pageContext.request.contextPath}/resources/js/bootstrap/bootstrap.min.js"></script>
     	<script  src="${pageContext.request.contextPath}/resources/js/util.js"></script>
     	<script  src="${pageContext.request.contextPath}/resources/js/message_${pageContext.response.locale}.js"></script>
+		
+		<script type="text/javascript">
+			var contextPath = "${pageContext.request.contextPath}";
+		</script>
 	</head>
 
 	<body>
@@ -88,7 +92,5 @@
     </div> <!-- /container -->
    
 
-</body>
+	</body>
 </html>
-
-

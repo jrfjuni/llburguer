@@ -25,7 +25,7 @@ $(document).ready(function(){
 function _fnClickFinish(){
 	
 	$.ajax({
-		url: "/burguer/snackrequest/finish",
+		url: contextPath + "/snackrequest/finish",
 		type:'POST',
         dataType:'json',
 		data: {name: $('#name').val(), address: $('#address').val()},
@@ -40,7 +40,7 @@ function _fnClickFinish(){
 				else
 					fnShowMessaError(result.message);
 			}else{
-				window.location.href = "/burguer/snackrequest/details/" + result.extraData.id;
+				window.location.href = contextPath + "/snackrequest/details/" + result.extraData.id;
 			}
 		}
 	});		
@@ -51,7 +51,7 @@ function _fnClickSave(){
 	fnCleanFieldsInvalid();
 	
 	$.ajax({
-		url: "/burguer/snackrequest/save",
+		url: contextPath + "/snackrequest/save",
 		type:'POST',
         dataType:'json',
 		data: _getForm(),
@@ -116,7 +116,7 @@ function _getForm(){
 
 function _init(){
 	$.ajax({
-		url: "/burguer/comum/allProducts",
+		url: contextPath + "/comum/allProducts",
 		 type:'GET',
          dataType:'json',
 		success: function(result) {
@@ -147,7 +147,7 @@ function _fnCleanItensSnack(){
 
 function _fillSnackSelected(id){
 	$.ajax({
-		url: "/burguer/comum/snack",
+		url: contextPath + "/comum/snack",
 		type:'GET',
         dataType:'json',
         data: {id: id},
@@ -225,5 +225,4 @@ function _fnFillComboProduct(products, element){
 	});
 
 	$(element).html(options);
-}; 
-
+};
