@@ -50,12 +50,12 @@
 				  		<div class="dropdown-menu dropdown-menu-right">
 				  	
 				  			<!-- PORTUGUESE -->
-						  	<a href="${pageContext.request.contextPath}/?lang=pt" rel="nofollow" class='dropdown-item'>
+						  	<a href="#" onclick="fnSetLang('pt');" rel="nofollow" class='dropdown-item'>
 								<fmt:message key="label.language.pt"/>
 							</a>
 					
 							<!-- ENGLISH -->
-							<a href="${pageContext.request.contextPath}/?lang=en" rel="nofollow" class='dropdown-item'>
+							<a href="#" onclick="fnSetLang('en');" rel="nofollow" class='dropdown-item'>
 								<fmt:message key="label.language.en"/>
 							</a>
 				  		</div>

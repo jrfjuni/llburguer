@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	$(document).off('click', '.burguer-btn-logout')
 	$(document).on('click', '.burguer-btn-logout', function(){
 		window.location.href = contextPath + "/logout";
 	});
@@ -49,5 +50,10 @@ $(document).ready(function(){
 		});
 		
 		$(element).html(option);
+	};
+	
+	fnSetLang = function(lang){
+		window.location.href = contextPath + "/?lang=" + lang;
+	
 	};
 });
