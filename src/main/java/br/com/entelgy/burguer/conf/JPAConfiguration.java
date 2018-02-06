@@ -62,7 +62,7 @@ public class JPAConfiguration {
 
 	    URI dbUrl = new URI("postgres://rqwbgqmpfzwktk:a8e2ed32bdb1200fe04fb8365c60fd3721b07a12bdb4d8826d269a9ba432fe12@ec2-54-197-253-122.compute-1.amazonaws.com:5432/da2sbnjgc7j71r");
 
-	    dataSource.setUrl("jdbc:postgresql://"+dbUrl.getHost()+":"+dbUrl.getPort()+dbUrl.getPath()+"?sslmode=require");
+	    dataSource.setUrl("jdbc:postgresql://"+dbUrl.getHost()+":"+dbUrl.getPort()+dbUrl.getPath());
 	    dataSource.setUsername(dbUrl.getUserInfo().split(":")[0]);
 	    dataSource.setPassword(dbUrl.getUserInfo().split(":")[1]);
 
