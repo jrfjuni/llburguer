@@ -1,5 +1,6 @@
 package br.com.entelgy.burguer.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -9,20 +10,21 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "USER_ROLE")
-public class UserRole {
+@Table(name = "USER_ROLE_SYSTEM")
+public class UserRoleSystem {
 	
 	@Id
 	@GeneratedValue
+	@Column(name="id")
 	private Integer id;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user", nullable = false)
-	private User user;
+	@JoinColumn(name = "id_user_system", nullable = false)
+	private UserSystem user;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "role", nullable = false)
-	private Role role;
+	@JoinColumn(name = "id_role_system", nullable = false)
+	private RolesSystem role;
 
 	public Integer getId() {
 		return id;
@@ -32,19 +34,19 @@ public class UserRole {
 		this.id = id;
 	}
 
-	public User getUser() {
+	public UserSystem getUser() {
 		return user;
 	}
 
-	public void setUser(User user) {
+	public void setUser(UserSystem user) {
 		this.user = user;
 	}
 
-	public Role getRole() {
+	public RolesSystem getRole() {
 		return role;
 	}
 
-	public void setRole(Role role) {
+	public void setRole(RolesSystem role) {
 		this.role = role;
 	}
 	

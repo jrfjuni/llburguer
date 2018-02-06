@@ -7,8 +7,8 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import br.com.entelgy.burguer.entity.User;
-import br.com.entelgy.burguer.entity.UserRole;
+import br.com.entelgy.burguer.entity.UserSystem;
+import br.com.entelgy.burguer.entity.UserRoleSystem;
 
 public class UserVO implements UserDetails{
 	
@@ -22,14 +22,14 @@ public class UserVO implements UserDetails{
 	
 	public UserVO() {}
 	
-	public UserVO(User client) {
+	public UserVO(UserSystem client) {
 		if(client != null) {
 			
 			this.userName = client.getEmail();
 			this.password = client.getPassword();
 			this.roles = new ArrayList<RoleVO>();
 			
-			for (UserRole role : client.getRoles()) {
+			for (UserRoleSystem role : client.getRoles()) {
 				this.roles.add(new RoleVO(role.getRole().getRole()));
 			}
 		}

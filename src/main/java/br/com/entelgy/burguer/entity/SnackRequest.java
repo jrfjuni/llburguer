@@ -27,8 +27,8 @@ public class SnackRequest {
 	private String addressRequester;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "USER", nullable = false)
-	private User user;
+	@JoinColumn(name = "id_user_system", nullable = false)
+	private UserSystem user;
 	
 	@Column(name="DT_REQUEST")
 	private Date dtRequest;
@@ -47,11 +47,11 @@ public class SnackRequest {
 		this.id = id;
 	}
 
-	public User getUser() {
+	public UserSystem getUser() {
 		return user;
 	}
 
-	public void setUser(User user) {
+	public void setUser(UserSystem user) {
 		this.user = user;
 	}
 

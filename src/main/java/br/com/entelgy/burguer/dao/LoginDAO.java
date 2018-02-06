@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 
-import br.com.entelgy.burguer.entity.User;
+import br.com.entelgy.burguer.entity.UserSystem;
 import br.com.entelgy.burguer.entity.vo.UserVO;
 
 @Repository
@@ -18,7 +18,7 @@ public class LoginDAO extends BaseDAO{
 		  .append(UserVO.class.getCanonicalName())
 		  .append(" (cli) ")
 		  .append(" FROM ")
-		  .append(User.class.getCanonicalName())
+		  .append(UserSystem.class.getCanonicalName())
 		  .append(" cli ")
 		  .append(" WHERE cli.email = :email ");
 		

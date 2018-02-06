@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import br.com.entelgy.burguer.comuns.OperatingResult;
 import br.com.entelgy.burguer.conf.UserLogged;
 import br.com.entelgy.burguer.entity.SnackRequest;
-import br.com.entelgy.burguer.entity.User;
+import br.com.entelgy.burguer.entity.UserSystem;
 import br.com.entelgy.burguer.entity.vo.CustomFieldVO;
 import br.com.entelgy.burguer.entity.vo.SnackRequestVO;
 import br.com.entelgy.burguer.service.ICustomFieldService;
@@ -104,7 +104,7 @@ public class SnackRequestController {
 		snackRequest.setNameRequester(form.getName());
 		snackRequest.setAddressRequester(form.getAddress());
 		
-		User user = new User();
+		UserSystem user = new UserSystem();
 		user.setEmail(UserLogged.getUsetLogged().getEmail());
 		
 		snackRequest.setUser(user);

@@ -10,17 +10,18 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="USER")
-public class User {
+@Table(name="USER_SYSTEM")
+public class UserSystem {
 
 	@Id
+	@Column(name="email")
 	private String email;
 	
 	@Column(name="password")
 	private String password;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-	private List<UserRole> roles;
+	private List<UserRoleSystem> roles;
 
 	public String getEmail() {
 		return email;
@@ -38,11 +39,11 @@ public class User {
 		this.password = password;
 	}
 
-	public List<UserRole> getRoles() {
+	public List<UserRoleSystem> getRoles() {
 		return roles;
 	}
 
-	public void setRoles(List<UserRole> roles) {
+	public void setRoles(List<UserRoleSystem> roles) {
 		this.roles = roles;
 	}
 }
