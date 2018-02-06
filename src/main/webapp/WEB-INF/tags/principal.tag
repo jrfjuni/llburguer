@@ -86,8 +86,7 @@
       <hr>
 
       <footer>
-      <p><c:out value = "${locale}"/></p>
-        <p>© Company 2017</p>
+        <p> <fmt:message key="label.footer"/> </p>
       </footer>
     </div> <!-- /container -->
    

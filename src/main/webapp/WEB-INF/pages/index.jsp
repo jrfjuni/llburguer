@@ -134,7 +134,7 @@
       <hr>
 
       <footer>
-        <p>© Company 2017</p>
+        <p> <fmt:message key="label.footer"/> </p>
       </footer>
     </div> <!-- /container -->
    
